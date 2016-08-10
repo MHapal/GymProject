@@ -11,15 +11,14 @@ import java.util.concurrent.TimeUnit;
  */
 public class BasicTestCase {
     protected static WebDriver driver;
-    protected WebDriver getWebDriver(){
-        if (driver == null){
-            driver = new ChromeDriver();
-            driver.manage().timeouts().implicitlyWait(Long.parseLong(ConfigProperties.getProperty("imp.wait")), TimeUnit.SECONDS);
-        }
-        return driver;
+
+    public BasicTestCase() {
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
     }
+
     @AfterTest
-    public void tearDown()throws Exception{
+    public void tearDown() throws Exception {
         driver.quit();
     }
 }
