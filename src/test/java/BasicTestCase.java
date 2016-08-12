@@ -1,10 +1,7 @@
-import com.gym.utils.ConfigProperties;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 
-import java.util.concurrent.TimeUnit;
 
 /**
  * Created by mhap on 09.08.2016.

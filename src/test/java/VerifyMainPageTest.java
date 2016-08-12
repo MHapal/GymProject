@@ -22,8 +22,8 @@ public class VerifyMainPageTest extends BasicTestCase {
         LOG.info("Page is opened");
 
         //Check the page title
-        Assert.assertEquals(driver.getTitle(), title);
-        LOG.error("Title is correct");
+        Assert.assertEquals(driver.getTitle(), title,"The page title is incorrect");
+        LOG.info("Title is correct");
 
     }
 
