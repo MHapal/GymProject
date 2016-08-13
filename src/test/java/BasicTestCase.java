@@ -9,7 +9,9 @@ import org.testng.annotations.AfterTest;
 public class BasicTestCase {
     protected static WebDriver driver;
 
+
     public BasicTestCase() {
+        System.setProperty("webdriver.chrome.driver","C:/Program Files (x86)/Selenium/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
