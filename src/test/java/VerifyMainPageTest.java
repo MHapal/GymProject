@@ -25,6 +25,12 @@ public class VerifyMainPageTest extends BasicTestCase {
         Assert.assertEquals(driver.getTitle(), title,"The page title is incorrect");
         LOG.info("Title is correct");
 
+        //Check that the header buttons are present and contain proper text
+        MainPage mainPage = new MainPage(driver);
+        Assert.assertTrue(mainPage.kotiButton.isDisplayed(),"Koti button is not displayed");
+        Assert.assertTrue(mainPage.kotiButton.isEnabled(),"Koti button is not enabled");
+        Assert.assertEquals("KOTI",mainPage.kotiButton.getText());
+
     }
 
 }

@@ -17,6 +17,33 @@ public class MainPage extends Page {
     @FindBy(xpath = ".//*[@id='header']/div[2]/div[2]/h1/span/a")
     public WebElement mainHeader;
 
+    @FindBy(id = "menu-item-54")
+    public WebElement kotiButton;
+
+    @FindBy(id = "menu-item-53")
+    public WebElement palvelutButton;
+
+    @FindBy(id = "menu-item-52")
+    public WebElement hinnastoButton;
+
+    @FindBy(id = "menu-item-51")
+    public WebElement aikataulutButton;
+
+    @FindBy(id = "menu-item-50")
+    public WebElement uutisetButton;
+
+    @FindBy(id = "menu-item-49")
+    public WebElement kuvatButton;
+
+    @FindBy(id = "menu-item-48")
+    public WebElement ohjaajatButton;
+
+    @FindBy(id = "menu-item-47")
+    public WebElement yhteystiedotButton;
+
+
+
+
     public String getMainHeader(WebElement title) {
         return mainHeader.getText();
 
